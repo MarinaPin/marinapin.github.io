@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="./favicon.png"/>
 
   <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
@@ -107,7 +107,7 @@
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
       <p> 
-          My work experience is quite diverse. I worked as a Researcher assistant in a Biomedical Laboratory in Brazil developing a new . I had the opportunity to be part of really interesting and innovative projects, all them focusing in bringing new useful technologies with low cost. I worked with an interdisciplinary team such as health professionals, biologists, government agencies and entrepreneurs. We succeed in building a new medical device for cancer treatment that is now in a clinical trial. 
+          My work experience is quite diverse. I worked as a Researcher assistant in a Biomedical Laboratory in Brazil developing a new . I had the opportunity to be part of really interesting and innovative projects, all them focusing in bringing new useful technologies with low cost. The team I worked with was quite interdisciplinar, such as health professionals, biologists, government agencies and entrepreneurs. We succeed in building a new medical device for cancer treatment that is now in a clinical trial. 
 
           My abilities include: mechanical manufacturing, shape-memory alloys, image processing, hardware development and technical standards for electronic medical devices. 
           
@@ -193,7 +193,7 @@
     
         <div class="w3-third w3-margin-bottom">
             <div class="w3-card-4">
-              <img src="./img/medical_images.png" alt="medical images" style="width:60%">
+              <img src="./img/medical_images.png" style="width:60%"onclick="onClick(this)" class="w3-hover-opacity" alt="Development of a GUI in Matlab and the semi-automatic measurement and localization of hepatic tumors in medical images using Image processing (US, TC and MRIfiles)">
               <div class="w3-container">
                   <h3>SOFIA Sofware</h3>
                   <p class="w3-opacity">Dec 2014 - Jun 2015</p>
@@ -206,10 +206,16 @@
         </div>
     </div>
   
-<!-- Second Parallax Image with Portfolio Text -->
+<!-- Resume download Section -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">RESUME</span>
+    <br>
+    <form method="get" action="./docs/Marina_Marques.pdf" target="_blank">
+      <button type="submit" class="w3-button w3-light-grey w3-padding-large w3-section">
+        <i class="fa fa-download"></i> Download Resume
+     </button>
+    </form>
   </div>
 </div>
 
