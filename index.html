@@ -29,10 +29,10 @@
     /* First image (Logo. Full height) */
     .bgimg-1 {
       background-image: url('./img/Inukshuk.jpg');
-      min-height: 800px;
+      min-height: 600px;
     }
 
-    /* Second image (Portfolio) */
+    /* Second image (resume) */
     .bgimg-2 {
       background-image: url("./img/parallax2.jpg");
       min-height: 400px;
@@ -67,7 +67,7 @@
     </a>
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> RESUME</a>
+    <a href="#resume" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> RESUME</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
@@ -77,7 +77,7 @@
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#resume" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
     <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
@@ -102,15 +102,17 @@
       <p><b><i class="fa fa-user w3-margin-right"></i>Marina Marques</b></p><br>
       <img src="./img/perfil.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300" height="333">
     </div>
-
+    <hr class="w3-opacity">
     <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p align="justify">
+    <div class="w3-col m6 w3-hide-small w3-padding-32"></div>
+          <p align="justify">
           I had the opportunity to be part of really interesting and innovative projects, all them focusing in bringing new useful technologies with low cost. We succeed in building a new medical device for tumor treatment that is now in a clinical trial. I worked with a team quite interdisciplinary, such as health professionals, biologists, government agencies and entrepreneurs.
           <br>
           After a while we wondered... "We built functional and helpful devices here, why don't we sell them ourselves?" and this was the beginning of the startup called Unite do Care. A startup focused on sharing the technologies we have created on the LaB with patients and costumers.
           <br>
+          <br>
           My abilities include: technical tools (data analysis, design, social media, writing, publishing), mechanical manufacturing, shape-memory alloys, image processing, hardware development and technical standards for electronic medical devices.
+          <br>
           <br>
           My greatest interest is to improve technologies to solve real problems. I am always looking for opportunities to make it real.
           </p>
@@ -118,27 +120,51 @@
   </div>
 </div>
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-    <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">5</span><br>
-        Projects
+<!-- Container (Resume Section)
+<div class="w3-content w3-container w3-padding-64" id="resume">
+    <h3 class="w3-center">MY WORK EXPERIENCE</h3>
+    <p class="w3-center"><em>Here are some of the projects I worked on.<br>
+      <div class="w3-col m6 w3-hide-small w3-padding-12">
+          <h3>Co-Founder and CTO</h3><em>Startup Unite to Care</em>
+            <p class="w3-opacity">Jul-2017 to Mar-2018</p>
+              <p align="justify"><em>
+               Developed program code in Matlab using image processing techniques for segmentation   and neural network back propagation to classify items.<br>
+               Designed and created marketing materials: website, business card, pitch presentations.<br>
+               Represented the company in fairs and entrepreneurs’ events.</em></p>
       </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">3</span><br>
-    Book Chapters
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">6</span><br>
-    Journals Articles
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">6+</span><br>
-    Congress Articles
-  </div>
-</div>
+      <div class="w3-col m6 w3-hide-small w3-padding-12">
+          <h3>Research Assistant</h3><em>Laboratory of Biomedical Engineering</em>
+            <p class="w3-opacity">Dec-2014 to Mar-2018</p>
+              <p align="justify"><em>
+               Worked with a team in a project nationally awarded as 1st place in Health Product Innovation of 2017. <br>
+               Built, tested and ex-vivo validated an active electrode for radiofrequency procedures.
+               Collaborated in Preclinical/Clinical trials to evaluate efficacy and safety of electronic devices (class I, III).<br>
+               Managed laboratory operations including inventory, maintenance and budget.<br>
+               Collaborated across different departments to conduct interdisciplinary research.<br>
+               Mentored 4 undergraduate students and trained apprentices.
+      </div>
+    </div>
+  </div>  -->
 
-  <!-- Grid -->
-  <div class="w3-row-padding" id="about">
+<!-- Resume download Section -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">RESUME</span>
+      <br>
+      <form method="get" action="./docs/Marina_Marques.pdf" target="_blank">
+        <button type="submit" class="w3-button w3-white w3-padding-large w3-section">
+          <i class="fa fa-download"></i> Download Resume
+       </button>
+       <div class="w3-xlarge w3-section w3-center">
+          <span class="w3-xxlarge w3-text-white w3-wide">Linkedin</span><br>
+          <a href="https://www.linkedin.com/in/marinapin/" target="_blank"><i class="fa fa-linkedin w3-text-white w3-xxlarge w3-hover-opacity"></i></a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="w3-row-padding" id="resume">
       <div class="w3-center w3-padding-64">
         <h3 class="w3-center">PROJECTS I WORKED ON</h3>
         <p class="w3-center"><em>Here are some of the projects I had the opportunity to participate.</em></p>
@@ -168,7 +194,7 @@
         <div class="w3-container w3-col s4 m4 l2 w3-center">
             <h3>SOFIA Sofware</h3>
             <p class="w3-opacity">Dec 2014 - Jun 2015</p>
-            <p>Development of a GUI in Matlab for semi-automatic measurement and localization of hepatic tumors in DICOM files (US, TC and MRI).
+            <p>Development of a GUI in Matlab for semi-automatic measurement and localization of hepatic tumors in medical images.
             </p>
         </div>
 
@@ -188,30 +214,24 @@
         </div>
     </div>
 
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-    <h3 class="w3-center">MY WORK EXPERIENCE</h3>
-    <p class="w3-center"><em>Here are some of the projects I worked on.<br>
-    </div>
-  </div>
-
-<!-- Resume download Section -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">RESUME</span>
-    <br>
-    <form method="get" action="./docs/Marina_Marques.pdf" target="_blank">
-      <button type="submit" class="w3-button w3-white w3-padding-large w3-section">
-        <i class="fa fa-download"></i> Download Resume
-     </button>
-     <div class="w3-xlarge w3-section w3-center">
-        <span class="w3-xxlarge w3-text-white w3-wide">Linkedin</span><br>
-        <a href="https://www.linkedin.com/in/marinapin/" target="_blank"><i class="fa fa-linkedin w3-text-white w3-xxlarge w3-hover-opacity"></i></a>
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">6</span><br>
+            Projects
+          </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">3</span><br>
+        Book Chapters
       </div>
-    </form>
-  </div>
-</div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">6</span><br>
+        Journals Articles
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">6+</span><br>
+        Congress Articles
+      </div>
+    </div>
 
 
 <!-- Modal for full size images on click-->
